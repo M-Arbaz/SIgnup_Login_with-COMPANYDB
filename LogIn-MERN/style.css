@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.con{
+    background-color: rgb(218, 217, 217);
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+.crd{
+    color: #fff;
+    text-align: center;
+    padding: 4%;
+    flex-basis: 30%;
+    height: 70vh;
+}
+.crd:nth-child(1){
+    background-color:#2b6bef;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.crd p::first-line{
+    color: rgba(46, 226, 202, 0.938);
+}
+.crd>form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.crd:nth-child(2){
+    background-image: url('https://shooliniuniversity.com/blog/wp-content/uploads/2023/03/BTech-Mechanical-Engineering-Robotics-AI.png');
+background-color: rgba(3, 3, 3, 0.4);
+background-attachment: fixed;
+background-position-x:right;
+background-blend-mode: color;
+}
+.crd>form input,.btn{
+    background-color: rgba(3, 3, 3, 0.567);
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+}
+.s_in{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #1c8ef9c7;
+}
+.f_in{
+    color: white;
+    width: 45%;
+    padding: 4% ;
+    text-align: center;
+    background-image: url('https://image.slidesdocs.com/responsive-images/background/blue-of-sika-deer-in-the-moon-clouds-powerpoint-background_01cee1db8a__960_540.jpg');
+    background-color: #1a1a1a8f;
+    background-blend-mode: color;
+    height: 60vh;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.f_in:hover{
+    box-shadow: 10px 15px 15px black;
+}
+.f_in>form{
+    display: flex;
+    flex-direction: column;
+}
+.f_in>form input,.btn{
+    color: white;
+    background-color: rgba(3, 3, 3, 0.4);
+    outline: none;
+    padding: 10px;
+    margin: 10px;
+}
