@@ -13,12 +13,12 @@ export default function Table(props){
     }, []);
     const token = localStorage.getItem("token")
     axios.post('http://localhost:3001/verified', {token}).then(res => {
-        // console.log(res,res.data.result.is.email)
+      
         const e=res.data.result.is.email
           setstate(e)
       })
       const arr= data.filter(o => o.u_m === state)
-    //   console.log(arr)
+
     const a=localStorage.getItem("token")
     if(!a){
        alert("you are not autherized with this page")
