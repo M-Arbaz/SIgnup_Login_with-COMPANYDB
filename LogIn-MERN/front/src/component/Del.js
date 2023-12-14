@@ -12,11 +12,10 @@ export default function Del(){
       },[]);
       const token = localStorage.getItem("token")
       axios.post('http://localhost:3001/verified', {token}).then(res => {
-          // console.log(res,res.data.result.is.email)
+
           const e=res.data.result.is.email
             setstate(e)
         })
-        // console.log(arr.map(dta=>dta.id))
       const arr= data.filter(o => o.u_m === state)
       const all = arr.map(dta=>dta.id)
     const history = useHistory();
@@ -35,7 +34,7 @@ export default function Del(){
          }
          const find_id = all.findIndex(a=>a===id)
          console.log(find_id)
-        //     console.log(del_id);
+      
         if(find_id===-1){
             alert("this id record doesnot belongs to you")
             return;
