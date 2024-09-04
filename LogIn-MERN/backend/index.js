@@ -66,7 +66,7 @@ const child = new mongoose.Schema({
 const student = mongoose.model('student', child);
 
 {
-  mongoose.connect('mongodb+srv://admin:admin@cluster0.ezsgqkf.mongodb.net/login')
+  mongoose.connect('mongodb+srv://admin:Pass@cluster0.ezsgqkf.mongodb.net/login')
     .then(() => {
       console.log('connection succesful');
     })
